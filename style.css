@@ -1,0 +1,153 @@
+html, body, .container {
+    background-color: whitesmoke;
+    font-family: 'IBM Plex Mono',sans-serif,-apple-system !important;    
+    user-select: none;
+}
+
+.btn {
+    border: solid 1px black !important;
+}
+
+.one {
+    position: relative;
+    width: 130px;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .bars {
+        align-items: baseline;
+        justify-content: center;
+        height: 55vh;
+    }
+
+    .bar {
+        /* transition: height 0.1s ease-in-out; */
+        width: 30px;
+        border: 1px solid black;
+        margin-left: 5px;
+        margin-top: auto;
+    }
+
+    .controller {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .controller .group {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .controller .item, .btn {
+        width: 130px;
+        align-items: center;
+        vertical-align: middle;
+        align-content: center;
+    }
+
+    .array_Board {
+        display: none;
+    }
+
+    .data {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bars {
+        align-items: baseline;
+        justify-content: center;
+        height: 55vh;
+    }
+
+    .bar {
+        /* transition: height 0.1s ease-in-out; */
+        width: 30px;
+        border: 1px solid black;
+        margin-left: 5px;
+        margin-top: auto;
+    }
+
+    .controller {
+        margin-top: 30px;
+        display: grid;
+    }
+
+    .controller .group {
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+
+    .controller .item, .controller .btn {
+        width: 130px;
+        vertical-align: middle;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .array_Board {
+        display: none;
+    }
+
+    .data {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 993px) {
+
+
+    .bars {
+        align-items: baseline;
+        justify-content: center;
+        height: 60vh;
+    }
+
+    .bar {
+        /* transition: height 0.5s ease-in-out; */
+        width: 30px;
+        border: 1px solid black;
+        margin-left: 10px;
+        margin-top: auto;
+    }
+
+    .array_Board {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .data {
+        height: 1.5em;
+        width: 30px;
+        border: 1px solid black;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        text-align: center;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .controller {
+        display: flex;
+        justify-content: center;
+    }
+
+    .controller .group {
+        margin: none;
+    }
+
+    .controller .btn, .controller .item {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
